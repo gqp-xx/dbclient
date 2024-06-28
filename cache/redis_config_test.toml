@@ -1,0 +1,19 @@
+[redis]
+[redis.name1]
+addr = "127.0.0.1:6379"
+password = ""
+db_index = 0
+read_timeout = 3
+write_timeout = 3
+pool_size = 10
+conn_timeout = 3
+idle_timeout = 2
+
+[redis.name2]
+addr = "127.0.0.1:6379"
+password = ""
+db_index = 1
+read_timeout = 3
+write_timeout = 3
+pool_size = 10
+conn_timeout = 3

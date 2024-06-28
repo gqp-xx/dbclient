@@ -1,0 +1,1 @@
+1.0.0 mysql client inti and redis client init
