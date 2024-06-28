@@ -1,0 +1,22 @@
+[db]
+[db.master]
+addr="127.0.0.1"
+port=3306
+user_name="root"
+password="root"
+db_name="mysql"
+so_timeout=50 #连接超时，单位毫秒ms
+read_timeout=300 #读取数据超时，单位毫秒ms
+parse_time=true  #是否将表中date datetime等日期类型自动转为go time.Time类型，false是转为go string
+time_loc="Local" #在将表中日期类型自动转为go time.Time类型时，设置的时区，默认是UTC
+cahrset="utf8"
+max_conn=100
+max_idle=2
+
+[db.slave]
+addr="127.0.0.1"
+port=3306
+user_name="root"
+password="root"
+db_name="sys"
+time_loc="Local"
